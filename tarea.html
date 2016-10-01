@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejemplo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1"/>
+
+<!--Importacion de jQuery Mobile css-->
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<!--Obtener datos-->
+$content = file_get_contents()
+
+
+<script>
+		$(document).ready(function(){
+			$("h1").css("color", "#40E0d0");
+			$("img").css("width","200px");
+      $("img").css("height","200px");
+		});
+		
+</script>
+</head>
+
+<body>
+<!-- primera pagina -->
+<div data-role="page" id="pagina1">
+  <div data-role="header" data-theme="b" data-position="fixed">
+    <h1>La Cocinona</h1>
+    <a href="#pagina2" data-role="button" data-theme="a" data-transition="Slideup">Mostrar Menu</a>
+    <a href="#pagina4" data-role="button" data-theme="a" data-transition="Fade">Platillo del dia</a>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <center>
+    <table>
+    <td>
+    <p>Bienvenidos a nuestro sitio oficial en donde buscamos interactuar con nuestros clientes y mostras nuestros deliciosos platillos caseros
+    </p>
+    </td>
+    <td>
+    <img src="http://www.lacocinona.com/images/Logotipo_grande.png">
+    </td>
+    </table>
+    </center>
+  </div>
+
+<!--Pie de pagina-->
+  <div data-role="footer" data-theme="b" class="ui-bar">
+    <h1>Comida Casera</h1>
+    <center>
+    <a href="#pagina3" data-role="button" data-theme="a" data-transition="Pop">Como contactarnos</a>
+    <a href="#pagina5" data-role="button" data-theme="a" data-transition="Flide">Promociones para clientes frecuentes</a>
+    </center>
+  </div>
+
+  <div data-role="main" class="ui-content">
+  <center>
+    <img src="http://www.radioactiva.cl/files/2015/02/el-ajiaco.jpg">
+    <img src="https://media-cdn.tripadvisor.com/media/photo-s/08/3e/da/fd/la-fonda-comida-casera.jpg">
+    <img src="https://encolombia.com/wp-content/uploads/2012/11/Ensalada-de-Lechuga-de-Pepino-recetas.jpg">
+    <img src="http://am-elsalv-cdn.agilecontents.com/resources/jpg/1/7/1467299498171.jpg">
+    </center>
+  </div>
+</div>
+
+<!-- Segunda Pagina -->
+<div data-role="page" id="pagina2">
+  <div data-role="header" data-theme="b" data-position="fixed">
+    <h1>Menu</h1>
+  </div>
+  
+  <div data-role="main" class="ui-content">
+    <center>
+    <p>
+      A continuacion te mostramos los platillos que encontraras en la Cocinona
+    </p>
+    
+    <h2>Carnes</h2>
+    
+    <img src="https://s-media-cache-ak0.pinimg.com/736x/30/aa/f1/30aaf103a1057d0cfd6e45f60f56af23.jpg">
+    <img src="https://1241736413.rsc.cdn77.org/wp-content/uploads/2016/07/ceballos-7.jpg">
+    <img src="https://carlosfierroalabarda.files.wordpress.com/2014/02/plato-casero.jpg">
+    <img src="http://i.blogs.es/3dd882/650_1000_minevera_albondigas_mixtas_con_arroz/650_1200.jpg">
+    <img src="http://cocinayrecetas-static.hola.com/lacocinaperfecta/files/2013/09/IMG_5607.jpg">
+    <img src="http://www.maquinasexpendedoras.es/wp-content/uploads/2013/02/maquinaexpendedoracasera.jpg">
+
+    </center>
+
+    <center>
+      <h2>Sopas</h2>
+    
+    <img src="http://www.tajpalacemalaga.com/wp-content/uploads/2015/12/1-sopa-de-pollo.jpg">
+    <img src="http://www.comedera.com/wp-content/uploads/2013/01/recetas-de-sopas-y-cremas.jpg">
+    <img src="https://lh6.googleusercontent.com/-haIXvCyu6ig/TXP9MZ3tx1I/AAAAAAAAACM/iAj-8SHTp1Y/s1600/DSC02240.JPG">
+    <img src="http://www.elheraldo.hn/csp/mediapool/sites/dt.common.streams.StreamServer.cls?STREAMOID=FxKtRVLNzaiymfNd$vtSH8$daE2N3K4ZzOUsqbU5sYsnEPiZxLCn9axxnCO9wcAnWCsjLu883Ygn4B49Lvm9bPe2QeMKQdVeZmXF$9l$4uCZ8QDXhaHEp3rvzXRJFdy0KqPHLoMevcTLo3h8xh70Y6N_U_CryOsw6FTOdKL_jpQ-&CONTENTTYPE=image/jpeg">
+    </center>
+
+    <center>
+    <h2> Ensaladas </h2>
+    
+    <img src="http://raafelurrea.webcindario.com/noticias95.jpg">
+    <img src="http://www.1001consejos.com/wp-content/uploads/2014/01/ensalada-de-brocoli.jpg">
+    <img src="http://www.lavidalucida.com/wp-content/uploads/2013/04/Ensalada-de-pepino-y-tomate-VL.jpg">
+    <img src="http://static.ellahoy.es/r/845X0/www.ellahoy.es/img/ensalada-de-pasta.jpg">
+    </center>
+
+  </div>
+
+  <div data-role="content" data-theme="a" >
+  <center>
+  <a href="#pagina1" data-role="button" data-theme="b" data-transition="Slidedown">Regresar a la pagina principal</a>
+  </center>
+  </div>
+</div>
+
+<!--Tercera pagina-->
+<div data-role="page" id="pagina3">
+  <div data-role="header" data-theme="b" data-position="fixed">
+    <h1>Contactanos</h1>
+  </div>
+
+  <div data-role="content" data-theme="a" >
+  <center>
+  <table>  
+  <td>
+  <center>
+  <p>Somos nuevos en esto de la tecnologia por lo tanto no contamos con paginas en las redes pero puedes contactarnos al numero 22146202 para reservar tu comida o para pedidos de comida para llevar te atendemos de lunes a viernes :)
+  </p>
+  </center>
+  </td>
+  <td>
+  <img src="https://www.promerica.com.sv/system/photos/167/custom/CONTACTANOS.png?1357833444&x=469&y=181">
+  </td>
+  </table>
+  </center>
+  <a href="#pagina1" data-role="button" data-theme="b" data-transition="Slideup">Regresar a la pagina principal</a>
+  </div>
+</div>
+
+<!--Cuarta pagina-->
+<div data-role="page" id="pagina4">
+  <div data-role="header" data-theme="b" data-position="fixed">
+    <h1>Platillo del día</h1>
+  </div>
+  
+  <center>
+    <p>A continuacion te presentamos los platillos diarios</p>
+    <h2>Lunes</h2>
+    <p>Carne Asada</p>
+    <img src="https://linderonorte.files.wordpress.com/2015/02/carnita-asada-ok.jpg">
+  </center>
+  
+
+  <center>
+    <h2>Martes</h2>
+    <p>Sopa de gallina india</p>
+    <img src="http://media.televicentro.hn/portadas/sopa-de-pollo.jpg?mtime=20150707153434">
+  </center>
+
+  <center>
+    <h2>Miercoles</h2>
+    <p>Pescado frito</p>
+    <img src="http://endimages.s3.amazonaws.com/legacy/1372779931_pescado.jpg">
+  </center>
+
+  <center>
+    <h2>Jueves</h2>
+    <p>Sopa de frijoles</p>
+    <img src="http://am-elsalv-cdn.agilecontents.com/resources/jpg/7/5/1442772050857.jpg">
+  </center>
+
+  <center>
+    <h2>Viernes</h2>
+    <p>Pollo Guisado</p>
+    <img src="http://f.tqn.com/y/cocinalatina/1/W/9/6/-/-/Pollo-Guisado-CL-3.jpg">
+  </center>
+  <div data-role="content" data-theme="a" >
+  <a href="#pagina1" data-role="button" data-theme="b" data-transition="Slide">Regresar a la pagina principal</a>
+  </div>
+</div>
+
+<!--Quinta pagina-->
+<div data-role="page" id="pagina5">
+  <div data-role="header" data-theme="b" data-position="fixed">
+    <h1>Promociones
+    </h1>
+  </div>
+
+  <div data-role="content" data-theme="a" >
+  <center>
+  <table>
+  <tr>
+    <td>
+    <p>
+    A los clientes frecuentes que han sido constantes en comer por todo un mes en La Cocinona tenemos la cortesia de regalarles un rico postre acompañado de un refresco de su agrado
+    </p>
+    </td>
+    <td>
+    <img src="http://static.imujer.com/sites/default/files/elgranchef/l/los-mejores-postres-sin-chocolate-1.jpg">
+    </td>
+  </tr>
+  
+  <tr>
+    <td>
+      <img src="https://thumbs.dreamstime.com/z/plato-apetitoso-en-una-placa-comida-y-bebida-del-restaurante-34679762.jpg">
+    </td>
+    <td>
+    <p>
+    Y a los clientes que tienen mas de un año en comer en La Cocinona les regalamos dos dias de comida gratis en donde pueden pedir lo que deseen
+    </p>  
+    </td>
+  </tr>
+  </table>
+  </center>
+  <a href="#pagina1" data-role="button" data-theme="b" data-transition="Slide">Regresar a la pagina principal</a>
+  </div>
+</div>
+
+</body>
+</html>
+
